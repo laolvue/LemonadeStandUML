@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1640789d-cd61-4aa6-9aba-b7347131ca6e" name="LemonadeStand" linkedPackageId="4527199b-a3d9-4916-974c-c1a82d156737" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="f0f57757-cedc-4cb2-85fe-947f3362f700">
-      <profileInstance Id="76488ded-d56e-4604-889f-aa2cf8bbebf3" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b9412438-aa2e-44d8-8808-b9387f0c6702">
-      <profileInstance Id="0887b059-e8c2-43d3-a3e0-ed66425a390e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="e11ec1d2-7f04-4214-b5e6-16ce1a7896bd" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -99,12 +85,6 @@
             <elementDefinition Id="9d4fb939-4fc0-4015-944c-3bd05d1be908" />
             <type_NamedElement>
               <referencedTypeMoniker Id="c7ec6f0e-87b6-40e4-8ed1-25d1f607f2da" LastKnownName="int" />
-            </type_NamedElement>
-          </property>
-          <property Id="b8df2690-ca1c-4145-a7b0-1fefe9732fc1" name="store" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b0a073d0-d5e5-40f0-a724-416d51e5b7ac" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="dce4e372-9b9a-489a-8222-5474dd342b29" LastKnownName="Store" />
             </type_NamedElement>
           </property>
           <property Id="f27c260f-686d-4b67-a7d3-aad40ff2b9f8" name="gameRound" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -417,9 +397,6 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation Id="3aaed6cc-765b-4b93-b677-b70b55a72009" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="cac3eb0e-0bc4-40c5-bf45-90ad6a842b11" />
           </operation>
           <operation Id="53caf484-07c5-405e-8c65-c0c6d7a9d0f9" name="DetermineWinner" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="2aec1bc3-6feb-427e-b88e-85bfae442bf6" />
@@ -1192,7 +1169,7 @@
           <property Id="0f1d0579-4538-4414-a4a5-1877a88dd9a0" name="customers" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0c9675b3-a64a-4f87-9162-3a0cb2cd4c5b" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="34954f99-63b8-41f8-8769-c328e1a49b4c" LastKnownName="List" />
+              <referencedTypeMoniker Id="630d5027-b123-4a73-80f7-7defe53214be" LastKnownName="List&lt;int&gt;" />
             </type_NamedElement>
           </property>
           <property Id="b7a3e6c6-cc07-4b3b-8ff9-d73607679c1c" name="totalCustomers" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1328,8 +1305,27 @@
         <elementDefinition Id="36df088c-2e77-47e2-8368-1381105f5636" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="630d5027-b123-4a73-80f7-7defe53214be" name="List&lt;int&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;int&gt;">
+        <elementDefinition Id="6086dcb6-cd3b-48e2-a3cc-5fb34bea02fe" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="4527199b-a3d9-4916-974c-c1a82d156737" name="ModelingProject1">
     <elementDefinition Id="e25779bb-a232-4e1b-81b2-0e87ade43442" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f0f57757-cedc-4cb2-85fe-947f3362f700">
+        <profileInstance Id="76488ded-d56e-4604-889f-aa2cf8bbebf3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b9412438-aa2e-44d8-8808-b9387f0c6702">
+        <profileInstance Id="0887b059-e8c2-43d3-a3e0-ed66425a390e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

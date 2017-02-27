@@ -210,24 +210,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="b0a073d0-d5e5-40f0-a724-416d51e5b7ac"
-            name="store"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="20d663c1-0e3e-44d6-bc02-87b303cd6a85"
-                LastKnownName="Store"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="ee9b954a-3317-4214-8c9a-49c9b49d91e5"
             name="gameRound"
             visibility="Private"
@@ -832,14 +814,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="cac3eb0e-0bc4-40c5-bf45-90ad6a842b11"
-            name="Operation1"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="2aec1bc3-6feb-427e-b88e-85bfae442bf6"
             name="DetermineWinner"
@@ -2445,8 +2419,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="b3e32cb1-91a3-4862-8ad0-713ced691a38"
-                LastKnownName="List"
+                Id="6086dcb6-cd3b-48e2-a3cc-5fb34bea02fe"
+                LastKnownName="List&lt;int&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -2674,6 +2648,11 @@
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6086dcb6-cd3b-48e2-a3cc-5fb34bea02fe"
+        name="List&lt;int&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
